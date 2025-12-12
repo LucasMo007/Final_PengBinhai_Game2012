@@ -1,0 +1,9 @@
+#version 430
+layout (location = 0) in vec3 vPos;
+
+uniform mat4 u_mvp;
+
+void main()
+{
+    gl_Position = u_mvp * vec4(vPos, 1.0);
+}
