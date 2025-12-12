@@ -144,6 +144,7 @@ int main()
             ++texture_index %= TEXTURE_TYPE_COUNT;
 
         point_light_angle += dt * 0.5f;
+        //float groundY = 0.0f; // ground plane Y
         Vector3 point_light_position = {
             point_light_radius * cos(point_light_angle),
             5.0f,
